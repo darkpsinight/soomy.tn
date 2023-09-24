@@ -1,0 +1,60 @@
+.carousel-card {
+    max-width: 274.8px !important;
+    height: 443.8px !important;
+    margin-top: 50px;
+    margin-bottom: 10px !important;
+    border-radius: 15px !important;
+    cursor: pointer;
+    box-shadow: 6px 6px 19px -4px rgba(0, 0, 0, 0.7) !important;
+    -webkit-box-shadow: 6px 6px 19px -4px rgba(0, 0, 0, 0.7) !important;
+    -moz-box-shadow: 6px 6px 19px -4px rgba(0, 0, 0, 0.7) !important;
+}
+
+.carousel-stack-container {
+    margin-bottom: 40px;
+}
+
+.pack-description-carousel {
+    margin: 0;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 600 !important;
+    font-size: 1.2rem !important;
+    line-height: 1.334;
+    letter-spacing: 0em;
+    margin-bottom: 0.35em;
+    color: #160006;
+    background-color: #FFD0DD;
+    border-radius: 4px;
+    padding: 0.9em;
+    text-align: center;
+}
+
+.pack-price-text-carousel {
+    font-size: 40px;
+    font-weight: 900;
+    margin-bottom: -12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.pack-price-text-carousel span {
+    font-size: 40px;
+    font-weight: 700;
+    color: #F9124E;
+    margin-right: 5px;
+}
+
+.carousel-root {
+    max-width: 1500px;
+    margin: 0 auto;
+    margin-bottom: 70px;
+}
+
+.centerVerticalStyle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}

@@ -1,0 +1,268 @@
+/*container pack*/
+.css-1maqnpx-MuiPaper-root-MuiCard-root {
+    background-color: #fff;
+    color: rgba(0, 0, 0, 0.87);
+    -webkit-transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    border-radius: 4px;
+    box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+    overflow: hidden;
+    max-width: 10em;
+    /* width: 8em;
+    max-height: 18em; */
+    margin-bottom: 10px;
+    background-color: #150006 !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.clicToPay-img {
+    /*height: 40px !important;*/
+    width: 85px !important;
+}
+
+.sobflous-img {
+    /*height: 40px !important;*/
+    width: 85px !important;
+}
+
+/*img*/
+.css-o69gx8-MuiCardMedia-root {
+    display: block;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    -webkit-background-position: center;
+    background-position: center;
+    width: 100%;
+    object-fit: cover;
+    max-height: 63%;
+    /*height: 8em;*/
+    object-fit: fill !important;
+}
+
+/*div title valable...*/
+.pack-description {
+    margin: 0;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 600 !important;
+    font-size: 0.9rem !important;
+    line-height: 1.334;
+    letter-spacing: 0em;
+    margin-bottom: 0.35em;
+    color: #160006;
+    background-color: #FFD0DD;
+    border-radius: 5px;
+    padding: 0.2em;
+    width: 7em;
+}
+
+.pack-description {
+    margin-top: -15px !important;
+}
+
+.pack-price {
+    color: white;
+}
+
+.pack-price-text {
+    font-size: 18px;
+    font-weight: 900;
+    margin-bottom: -12px;
+}
+
+/* bouton utiliser pack */
+.button-utiliser-pack {
+    position: relative;
+    font-size: 15px;
+    font-weight: 600;
+    margin: 0;
+    border: none;
+    background-color: #810929;
+    background-image: linear-gradient(#ca0b3e, #810929);
+    color: #efeeeb;
+    padding: 10px;
+    vertical-align: middle;
+    border-radius: 7px;
+    width: 7.2em;
+    height: 1.7em;
+    overflow: hidden;
+}
+
+.button-utiliser-pack:after {
+    content: '';
+    border-radius: 0px 0px 7px 7px;
+    position: absolute;
+    bottom: -4px;
+    height: 70%;
+    width: 100%;
+    border-radius: 50%;
+    background: linear-gradient(#d41447, #e90944, #d11245, #c71343, #810929);
+    z-index: -1 !important;
+}
+
+.button-utiliser-pack {
+    position: absolute;
+    top: 10px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 11 !important;
+}
+
+/* button utilisé est sélectionné = disabled */
+.button-utiliser-pack-disabled {
+    position: relative;
+    font-size: 15px;
+    font-weight: 600;
+    margin: 0;
+    border: none;
+    background-image: linear-gradient(#24ce32, #1dd62d);
+    padding: 10px;
+    vertical-align: middle;
+    border-radius: 7px;
+    width: 7.2em;
+    height: 1.7em;
+    overflow: hidden;
+}
+
+.button-utiliser-pack-disabled:after {
+    content: '';
+    border-radius: 0px 0px 7px 7px;
+    position: absolute;
+    bottom: -4px;
+    height: 70%;
+    width: 100%;
+    border-radius: 50%;
+    background: linear-gradient(#1eb92b, #1e9427, #138d1d, #49c753, #11941c);
+    /* make icon appear above button */
+    z-index: -1 !important;
+}
+
+.button-utiliser-pack-disabled {
+    position: absolute;
+    top: 10px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 11 !important;
+}
+
+/* button utilisé est sélectionné = disabled + isEnabled = false */
+.button-utiliser-pack-disabled-not-enabled {
+    position: relative;
+    font-size: 15px;
+    font-weight: 600;
+    margin: 0;
+    border: none;
+    background-image: linear-gradient(#9e617e77, #9145736c);
+    vertical-align: middle;
+    border-radius: 7px;
+    width: 7.2em;
+    height: 1.7em;
+    overflow: hidden;
+    top: 5px;
+    z-index: 11 !important;
+    margin-bottom: -10px !important;
+}
+
+.button-utiliser-pack-disabled-not-enabled:after {
+    content: '';
+    border-radius: 0px 0px 7px 7px;
+    position: absolute;
+    bottom: -4px;
+    height: 70%;
+    width: 100%;
+    border-radius: 50%;
+    background: linear-gradient(#a5327965, #9c3a7b80, #7c0e4a85, #940b5fc9, #862967);
+    /* make icon appear above button */
+    z-index: -1 !important;
+}
+
+/* add effect not-allowed cursor to MUI button and make it !important to fix issue */
+.css-sghohy-MuiButtonBase-root-MuiButton-root.Mui-disabled {
+    pointer-events: auto !important;
+    cursor: not-allowed !important;
+}
+
+/* bouton recharcher pack */
+.button-recharge-pack {
+    position: relative;
+    font-size: 15px;
+    font-weight: 600;
+    margin: 0;
+    border: none;
+    background-color: #810929;
+    background-image: linear-gradient(#ca0b3e, #810929);
+    color: #efeeeb;
+    padding: 10px;
+    vertical-align: middle;
+    border-radius: 7px;
+    width: 7.2em;
+    height: 1.7em;
+    overflow: hidden;
+}
+
+.button-recharge-pack:after {
+    content: '';
+    border-radius: 0px 0px 7px 7px;
+    position: absolute;
+    bottom: -4px;
+    height: 70%;
+    width: 100%;
+    border-radius: 50%;
+    background: linear-gradient(#d41447, #e90944, #d11245, #c71343, #810929);
+    z-index: -1 !important;
+}
+
+.button-recharge-pack {
+    position: absolute;
+    top: 10px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 11 !important;
+}
+
+.css-46bh2p-MuiCardContent-root:last-child {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.selectionned-pack {
+    display: flex;
+    justify-content: center;
+}
+
+.carte-bancaire-text {
+    font-weight: 800 !important;
+    font-size: 1.4rem !important;
+}
+
+.carte-bancaire-text {
+    font-weight: 800 !important;
+}
+
+.MuiAlert-message {
+    width: 100%;
+}
+
+.inner-alert {
+    justify-content: space-between;
+}
+
+.block-ui-content {
+    position: relative;
+    color: white;
+    font-size: 25px;
+    font-weight: 800;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

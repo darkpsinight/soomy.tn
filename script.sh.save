@@ -1,0 +1,67 @@
+#!/bin/bash
+
+# Change directory to /var/www/soomy/backend
+cd /var/www/soomy/backend
+
+# Remove the build/ directory recursively and forcefully
+rm -rf build/
+
+# Change directory to /var/www/soomy/frontend
+cd /var/www/soomy/frontend
+
+# Run the npm run build command
+npm run build
+
+# Copy the contents of /var/www/soomy/frontend/build/ to /var/www/soomy/backend
+cp /var/www/soomy/frontend/build/ /var/www/soomy/backend -r
+
+# Change directory to /var/www/soomy/backend
+cd /var/www/soomy/backend
+
+# Start all processes with pm2
+pm2 start all
+
+# Restart all processes with pm2
+pm2 restart all
+
+# Reload all processes with pm2
+pm2 reload all
+
+# Print a message to indicate the script has finished
+echo "Script execution completed."
+
+# Print a message to indicate pm2 logs
+echo "To review the log of the server, please run: \"pm2 log all\""#!/bin/bash
+
+# Change directory to /var/www/soomy/backend
+cd /var/www/soomy/backend
+
+# Remove the build/ directory recursively and forcefully
+rm -rf build/
+
+# Change directory to /var/www/soomy/frontend
+cd /var/www/soomy/frontend
+
+# Run the npm run build command
+npm run build
+
+# Copy the contents of /var/www/soomy/frontend/build/ to /var/www/soomy/backend
+cp /var/www/soomy/frontend/build/ /var/www/soomy/backend -r
+
+# Change directory to /var/www/soomy/backend
+cd /var/www/soomy/backend
+
+# Start all processes with pm2
+pm2 start all
+
+# Restart all processes with pm2
+pm2 restart all
+
+# Reload all processes with pm2
+pm2 reload all
+
+# Print a message to indicate the script has finished
+echo "Script execution completed."
+
+# Print a message to indicate pm2 logs
+echo "To review the log of the server, please run: \"pm2 log all\""
